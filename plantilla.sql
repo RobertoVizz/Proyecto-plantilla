@@ -30,6 +30,6 @@ CREATE TABLE ordenes (
     id_cliente INTEGER,
     CONSTRAINT fk_id_cliente
         FOREIGN KEY (id_cliente)
-        REFERENCES clientes (id_clientes)
+        REFERENCES clientes (id_cliente)
         ON DELETE SET NULL
 );
