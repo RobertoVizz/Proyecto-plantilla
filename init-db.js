@@ -10,7 +10,7 @@ const client = new Client({
 
 async function main() {
   await client.connect();
-  const sql = fs.readFileSync("schema.sql", "utf8");
+  const sql = fs.readFileSync("plantilla.sql", "utf8");
   await client.query(sql);
   console.log("SQL ejecutado correctamente");
   await client.end();
